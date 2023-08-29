@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>digite de qual pais voce é</h1>
+    <input type="text" name="" id="pais">
+    <input type="button" value="comparar" onclick="comparar()">
+    <div id = 'res'></div>
+    <script>
+        function comparar(){
+let pais = document.querySelector('#pais').value
+let res = document.querySelector('#res')
+if(pais.toLowerCase() == 'brasil'){
+    res.innerText = 'voce é brasileiro'
+}
+else{
+    res.innerText = 'voce é estrangeiro'
+}
+  }
+    </script>
+</body>
+</html>
