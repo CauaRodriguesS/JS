@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes</title>
+</head>
+<body>
+    <h1>diga a velocidade do seu carro</h1>
+<input type="number" id="in">
+<input type="button" value="verificar" onclick="comparar()">
+<div id = 'res'></div>
+    <script>
+        var limite = 50;
+        function comparar(){
+var v = document.querySelector('#in')
+var velocidade = Number(v.value)
+var res = document.getElementById('res')
+
+if (velocidade> limite){
+    res.innerText = `sua velocidade é de ${velocidade} foi multado`
+
+}}
+    </script>
+</body>
+</html>
