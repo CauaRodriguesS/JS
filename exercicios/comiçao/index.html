@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comissao</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: sans-serif;
+        }
+        h1,p{
+            text-align: center;
+        }
+       section{border-radius: 5px;
+        padding: 10px;
+        background-color: aliceblue;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <header><h1>Calcule sua comissão</h1></header>
+
+        <section>
+            <p>Qual foi o valor da venda?</p>
+            <input type="number" id="valor">
+            <input type="button" value="Calcular" onclick="calcularComissao()">
+            <div id="res"></div>
+        </section>
+
+        <script>
+            function calcularComissao() {
+                var inputValor = document.querySelector('#valor');
+                var valor = Number(inputValor.value);
+                var resultado = valor * 0.05;
+                
+                var res = document.querySelector('#res');
+                res.innerHTML = `O valor da sua comissão pela venda de ${valor} é de ${resultado}`;
+            }
+        </script>
+    </main>
+</body>
+</html>
