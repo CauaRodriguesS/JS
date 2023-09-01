@@ -19,6 +19,18 @@
         height: 300px;
         margin: auto;
        }
+       #calculo{
+        visibility: hidden;
+        margin-top: 100px;
+       }
+      #login{
+        margin-left: 1.5em;
+      }
+     
+   
+       #venda{
+        margin: 1.5em;
+       }
     </style>
 </head>
 <body>
@@ -26,18 +38,44 @@
         <header><h1>Calcule sua comissão</h1></header>
 
         <section>
-            <p>Qual foi o valor da venda?</p>
-            <input type="number" id="valor">
-            <input type="button" value="Calcular" onclick="calcularComissao()">
-            <div id="res"></div>
+            <p>Faça login!</p>
+             <p> coloque seu ID</p>
+             <div id="login">
+                <input type="number" id="nn">
+                <input type="button" value="enviar" onclick="fazer()">
+            </div>
+        
+
+            <div id="calculo">
+                <p>Qual foi o valor da venda?</p>
+                <div id="venda">
+                    <input type="number" id="valor">
+                    <input type="button" value="calcular" onclick="calcularComissao()">
+                </div>
+                <div id="res"></div>
+            </div>
         </section>
 
         <script>
+            var local = document.querySelector("#calculo")
+            var l = (local.value)
+            let caua = 1234
+            function fazer(){
+                var id = document.querySelector('#nn')
+                var a = (id.value)
+                if(caua == a){
+                alert("O LOGIN FOI CONFIRMADO")
+              document.getElementById(local).style.visibility = 'visible'
+
+}
+
+}
+
             function calcularComissao() {
                 var inputValor = document.querySelector('#valor');
                 var valor = Number(inputValor.value);
                 var resultado = valor * 0.05;
-                
+                  
                 var res = document.querySelector('#res');
                 res.innerHTML = `O valor da sua comissão pela venda de ${valor} é de ${resultado}`;
             }
