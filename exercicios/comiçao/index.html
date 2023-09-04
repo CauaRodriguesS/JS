@@ -8,7 +8,14 @@
         body{
             background-color: aquamarine;
             font-family: sans-serif;
+            text-align: center;
         }
+     
+        h1{
+            color: rgb(255, 176, 31);
+        }
+        
+        
         h1,p{
             text-align: center;
         }
@@ -16,8 +23,10 @@
         padding: 10px;
         background-color: aliceblue;
         width: 300px;
-        height: 350px;
+        max-height: 350px;
         margin: auto;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
+    
        }
        #calculo{
         display: none;
@@ -38,7 +47,7 @@
         <header><h1>Calcule sua comissão</h1></header>
 
         <section>
-            <p>Faça login!</p>
+            <p id="fistp">Faça login!</p>
              <p> coloque seu ID</p>
              <div id="login">
                 <input type="number" id="nn">
@@ -60,25 +69,39 @@
             var local = document.querySelector("#calculo")
             var l = (local.value)
             let caua = 1234
+            let jefinho = 1423 
             function fazer(){
                 var id = document.querySelector('#nn')
                 var a = (id.value)
                 if(caua == a){
-                alert("O LOGIN FOI CONFIRMADO")
-              document.getElementById('calculo').style.display = 'block'
+                    alert("O LOGIN FOI CONFIRMADO")
+                    document.getElementById('calculo').style.display = 'block'
+                    function calcularComissao() {
+                     inputValor = document.querySelector('#valor');
+                     valor = Number(inputValor.value);
+                    var resultado = valor * 0.05;
+                    var res = document.querySelector('#res');
+                    res.innerHTML = `O valor da sua comissão pela venda de ${valor} é de ${resultado}`;
+}
+                }
+
+
+        
+        if(a == jefinho){
+                    alert("O LOGIN FOI CONFIRMADO")
+                    document.getElementById('calculo').style.display = 'block'
+                    function calcularComissao() {
+                    inputValor = document.querySelector('#valor');
+                    valor = Number(inputValor.value);
+                    var resultado = valor * 0.05;
+                    var res = document.querySelector('#res');
+                    res.innerHTML = `O valor da sua comissão pela venda de ${valor} é de ${resultado}`;
 
 }
+                
+}}
 
-}
-
-            function calcularComissao() {
-                var inputValor = document.querySelector('#valor');
-                var valor = Number(inputValor.value);
-                var resultado = valor * 0.05;
-                  
-                var res = document.querySelector('#res');
-                res.innerHTML = `O valor da sua comissão pela venda de ${valor} é de ${resultado}`;
-            }
+            
         </script>
     </main>
 </body>
