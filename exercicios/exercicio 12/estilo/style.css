@@ -22,3 +22,15 @@ text-align: center;
 color: aliceblue;
 font-style: italic;
 }
+img{
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+div{
+    font-family: sans-serif;
+    font-variant:  small-caps;
+    text-align: center;
+   
+
+}
