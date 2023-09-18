@@ -1,36 +1,41 @@
-body{
-background: rgb(113, 113, 230);
+body {
+    background: rgb(157, 157, 231);
 }
-header{
+
+header {
     font-family: sans-serif;
-    color: aliceblue;
+    color: #ffffff;
     text-align: center;
 }
 
-section{
-background-color: aliceblue;
-width: 400px;
-height: 500px;
-border-radius: 10px;
-margin: auto;
-box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.685);
+section {
+    background-color: aliceblue;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin: auto;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.685);
 }
-footer{
-font-family: sans-serif;
-font-size: large;
-text-align: center;
-color: aliceblue;
-font-style: italic;
+
+footer {
+    font-family: sans-serif;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+    font-style: italic;
 }
-img{
+
+img {
     border-radius: 20px;
     display: block;
     margin: auto;
 }
-div{
+
+div {
     font-family: sans-serif;
-    font-variant:  small-caps;
+    font-variant: small-caps;
     text-align: center;
-   
+    margin-top: 10px;
 
 }
