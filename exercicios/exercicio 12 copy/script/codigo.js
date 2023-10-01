@@ -21,6 +21,12 @@ function verificar() {
             if(idade >=0 && idade < 14){
                 img.setAttribute("src","crianca-homem.jpg")
             }
+             if(idade < 21){
+                alert("funcionou")
+                img.setAttribute("src","adulto-homem.jpg")
+
+
+            }
         }
         else if (fsex[1].checked) {
             genero = "mulher"
