@@ -1,41 +1,24 @@
-function verificar() {
-    var data = new Date();
-    var ano = data.getFullYear();
-    var res = document.querySelector("#resultado")
-    var nasc = document.querySelector("#nascimento").value;
-
-
-    if (nasc.lenght === 0 || nasc > ano) {
-        alert("Não foi possível verificar, por favor, verifique os dados e tente novamente.");
-    }
-    else {
-        var fsex = document.getElementsByName("radsex")
-        var idade = ano - nasc
-        res.style.textAlign = "center"
-        var genero = ''
-        var img = document.createElement("img")
-        img.setAttribute("id","foto")
-        if (fsex[0].checked) {
-            genero = "homem"
-            res.innerHTML = `detectamos um ${genero} de ${idade} anos de idade`
-            if(idade >=0 && idade < 14){
-                img.setAttribute("src","crianca-homem.jpg")
-            }
-             if(idade < 21){
-                alert("funcionou")
-                img.setAttribute("src","adulto-homem.jpg")
-
-
-            }
+function verificar(){
+    var data = new Date()
+    var ano = data.getFullYear()
+    var nasc = document.querySelector("#nascimento")
+    var res = document.getElementById("resultado")
+    if(nasc.value.length > ano || nasc.value.length == 0 || nasc.value == "0"){
+        alert("error,verifique os dados inseridos")
+    }else{
+        var sexo = document.getElementsByName("radsex")
+        var idade = ano - Number(nasc.value)
+        res.innerHTML = `idade detectada de ${idade} idade`
+        var genero = ""
+        if(sexo[0].checked){
+            alert("homem")
         }
-        else if (fsex[1].checked) {
-            genero = "mulher"
-            res.innerHTML = `detectamos uma ${genero} de ${idade} anos de idade`
-            
+        else if(sexo[1].checked){
+            alert("mulher")
         }
-        res.appendChild(img)
-
-
     }
+    
+
+
 
 }

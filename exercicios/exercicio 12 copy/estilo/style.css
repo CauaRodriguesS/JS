@@ -15,6 +15,7 @@ section {
     border-radius: 10px;
     margin: auto;
     box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.685);
+    padding: 20px;
 }
 
 input {
