@@ -2,7 +2,7 @@ function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
    if(num.Value.length == 0){
-       
+       alert('erro')
    }else{
        let n = Number(num.value)
        let c = 1
