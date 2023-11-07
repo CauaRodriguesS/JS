@@ -1,0 +1,15 @@
+[
+    {
+    "nome":"caua",
+    "idade":17,
+    "esta_trabalhando":true,
+    "profissao":{
+        "profissao":"programador",
+        "empresa":"felix",
+        "salario":1200.19
+        
+    },
+    "hobbies":["programas","correr","lutar"]
+    
+}
+]
