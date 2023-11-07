@@ -1,0 +1,14 @@
+#carro{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+}
+b{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    margin: 5px;
+}
+cont{
+    gap: 20px;
+}
