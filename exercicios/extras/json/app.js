@@ -13,9 +13,9 @@ const obs = [
         
     }
 ]
-const JSONdata = JSON.stringify(obs)
+const JSONdata = JSON.stringify(obs) // passa para json
 console.log(JSONdata)
-const objdata = JSON.parse(JSONdata)
+const objdata = JSON.parse(JSONdata) // passa para obj  
 console.log(objdata)
 objdata.map((pessoa) =>{
 console.log(pessoa.nome)
